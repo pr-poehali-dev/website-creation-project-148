@@ -26,8 +26,9 @@ const MusicPlayer = () => {
         <iframe
           key={String(playing)}
           src={playing ? "https://www.youtube.com/embed/EU_4PMDidwc?autoplay=1&loop=1&playlist=EU_4PMDidwc&controls=0&mute=0" : "about:blank"}
-          allow="autoplay"
-          style={{ position: "fixed", top: "-9999px", left: "-9999px", width: "1px", height: "1px", opacity: 0, pointerEvents: "none" }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{ position: "fixed", bottom: 0, left: 0, width: "200px", height: "113px", opacity: 0.01, pointerEvents: "none", zIndex: 0 }}
           title="bg-music"
         />
       )}
