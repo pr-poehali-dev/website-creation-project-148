@@ -25,7 +25,7 @@ const MusicPlayer = () => {
       {loaded && (
         <iframe
           key={String(playing)}
-          src={playing ? "https://www.youtube.com/embed/3_OTlO5Eu5Q?autoplay=1&loop=1&playlist=3_OTlO5Eu5Q&controls=0&mute=0" : "about:blank"}
+          src={playing ? "https://www.youtube.com/embed/EU_4PMDidwc?autoplay=1&loop=1&playlist=EU_4PMDidwc&controls=0&mute=0" : "about:blank"}
           allow="autoplay"
           style={{ position: "fixed", top: "-9999px", left: "-9999px", width: "1px", height: "1px", opacity: 0, pointerEvents: "none" }}
           title="bg-music"
