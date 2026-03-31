@@ -9,9 +9,19 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const YoutubeBackground = () => (
+  <iframe
+    src="https://www.youtube.com/embed/3_OTlO5Eu5Q?autoplay=1&loop=1&playlist=3_OTlO5Eu5Q&controls=0&mute=0"
+    allow="autoplay"
+    style={{ position: "fixed", top: "-9999px", left: "-9999px", width: "1px", height: "1px", opacity: 0, pointerEvents: "none" }}
+    title="bg-music"
+  />
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <YoutubeBackground />
       <Toaster />
       <Sonner />
       <BrowserRouter>
